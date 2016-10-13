@@ -1,0 +1,111 @@
+<!--main document type of the web page-->
+<!DOCTYPE html>
+<!--default html language to be english-->
+<html lang="en">
+
+<!--head of the web page-->
+    <head>
+        <!--title - this is the title of this html file-->
+        <title>DMV New License Form</title>
+        <!--style - used to write CSS style on the html file itself-->
+        <style>
+        </style>
+        <!--script - used to write javascript on the html file itself-->
+        <script>
+        </script>
+        <!--link - used to link an external source-->
+        <!--used to source only css files and images-->
+        <link/>
+        <!--base - this used to specify the base URL of our web page, its optional-->
+        <base/>
+        <!--meta - this is used to describe more mata information which are not covered by the above five-->
+        <meta charset="UTF-8"/>
+        <meta name="description" content="This is the employee detail for of ABC Company"/>
+        <meta name="keywords" content="Employee, form, details, job, application" />
+    </head>
+
+    <!--body of the web page-->
+    <body>
+    <!--body is the rendering part of the html-->
+    <!--main article for forms-->
+        <article>
+        <!--page header-->
+        <header>
+            <h1>Welcome to my website!</h1>
+        </header>
+        <!--main body of the page-->
+        <section>
+            <!--form for new license in dmv-->
+            <form name="Employee Form">
+                <div>
+                <label>Employee Form</label>
+                </div>
+                <br />
+                <!--First Name-->
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="FirstName" placeholder="First Name"/>
+                </div>
+                <br />
+                <!--Last Name-->
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="LastName" placeholder="Last Name" />
+                </div>
+                <br />
+                <!--Phone Number-->
+                <div>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" id="phoneNumber" name="PhoneNumber" placeholder="Phone Number" />
+                </div>
+                <br />
+                <!-- Email Id-->
+                <div>
+                    <label for="email">Email Id</label>
+                    <input type="email" id="email" name="emailId" placeholder="Your email Id" />
+                </div>
+                <br />
+                <!--Password-->
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" />
+                </div>
+                <br />
+                <!--Gender-->
+                <div>
+                    <label for="gender">Gender:</label>
+                    <div id="gender">
+                        <!--male-->
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="Male"/>
+
+                        <!--female-->
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="Female"/>
+                    </div>
+                </div>
+                <br />
+                <!--Skills-->
+                <div>
+                    <label for="application">Job Application done?</label>
+                    <input type="checkbox" id="application" name="application" />
+                </div>
+                <br />
+                <!--submit button-->
+                <button type="submit" id="submit" class="button">
+                <span> Submit</span>
+                </button>
+                <!--reset/cancel-->
+                <button type="reset" id="reset" class="button">
+                    <span>Cancel</span>
+                </button>
+                <br />
+            </form>
+        </section>
+            <!--footer of the page-->
+            <footer>
+                End of the form!!!
+            </footer>
+        </article>
+    </body>
+</html>
