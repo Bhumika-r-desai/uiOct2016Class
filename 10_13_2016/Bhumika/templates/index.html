@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>DMV New License Form</title>
+    <style>
+    </style>
+    <script>
+    </script>
+    <link href="../styles/styles.css" rel="stylesheet"/>
+    <base/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <meta name="description" content="This is the employee detail for of ABC Company"/>
+    <meta name="keywords" content="Employee, form, details, job, application" />
 </head>
-<body>
-$END$
-</body>
+
+    <!--body of the web page-->
+    <body>
+        <article>
+            <!--page header-->
+            <header>
+                <h1>Welcome to my website!</h1>
+            </header>
+            <!--main body of the page-->
+            <section>
+                <!--form for new license in dmv-->
+                <form name="Employee Form">
+                        <label>Employee Form</label>
+                    <!--First Name-->
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="FirstName" placeholder="First Name"/>
+                    <!--Last Name-->
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="LastName" placeholder="Last Name" />
+                    <!--Phone Number-->
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="PhoneNumber" placeholder="Phone Number" />
+                    <!-- Email Id-->
+                        <label for="email">Email Id</label>
+                        <input type="email" id="email" name="emailId" placeholder="Your email Id" />
+                    <!--Password-->
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" />
+                    <!--Gender-->
+                        <label for="gender">Gender:</label>
+                        <div id="gender">
+                            <!--male-->
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="Male"/>
+
+                            <!--female-->
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="Female"/>
+                        </div>
+                    <!--Skills-->
+                        <label for="application">Job Application done?</label>
+                        <input type="checkbox" id="application" name="application" />
+                    <!--submit button-->
+                    <button type="submit" id="submit" class="button">
+                        <span> Submit</span>
+                    </button>
+                    <!--reset/cancel-->
+                    <button type="reset" id="reset" class="button">
+                        <span>Cancel</span>
+                    </button>
+                    <br />
+                </form>
+            </section>
+            <!--footer of the page-->
+            <footer>
+                End of the form!!!
+            </footer>
+        </article>
+    </body>
 </html>

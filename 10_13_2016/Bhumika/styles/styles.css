@@ -1,0 +1,16 @@
+body {
+    border: 2px solid #000000;
+}
+#submit {
+    background-color: #08cd3b;
+}
+#reset {
+    background-color: #da615b;
+}
+label {
+    display: block;
+    margin: 10px;
+}
+#gender {
+    display: inline-block;
+}
