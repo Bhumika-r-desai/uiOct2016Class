@@ -17,7 +17,6 @@ div{
     float: none;
     position: fixed;
     top: 10px;
-    left: 460px;
 }
 #nav-heading{
     position: fixed;
@@ -32,6 +31,7 @@ div{
 
 ul{
     list-style-type: none;
+    background-color: #ccc;
 }
 
 li{
@@ -39,7 +39,6 @@ li{
     margin: 5px;
     padding: 5px;
     width: 50px;
-    background-color: #b9f570;
     text-align: center;
 }
 
@@ -87,16 +86,16 @@ input [type="gender"] {
 }
 
 div > p{
-   background-color: #cccccc;
+   color: #da615b;
     display: block;
 }
 
 div + p{
-    background-color: #dfd2de;
+    color: #41b70c;
     display: block;
 }
 
 div ~ p{
-    background-color: #c5de91;
+    color: #247cff;
     display: block;
 }
