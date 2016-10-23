@@ -13,20 +13,22 @@ div{
     display: inline-block;
     margin: 10px;
 }
+
 #main-heading{
-    float: none;
     position: fixed;
     top: 10px;
 }
+
 #nav-heading{
     position: fixed;
     top: 40px;
     left: 460px;
 }
+
 #main-footer{
-    float: left;
     position: fixed;
-    width: 460px;
+    top: 550px;
+    left: 10px;
 }
 
 ul{
@@ -42,6 +44,9 @@ li{
     text-align: center;
 }
 
+li:hover{
+    background-color: #fadd5c;
+}
 label{
     display: block;
     padding: 5px 0;
