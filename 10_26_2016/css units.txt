@@ -1,31 +1,23 @@
 so far we have been using the math unit as 'px'
 
-
-
 px -> its the smallest unit of the screen. our screen/monitor resolution defines the pixels.
 (1920x1080) (4000x2000)
-
 
 em -> its the unit with respective to the font-size of the same element
 example:
 lets say i have one div with font-size as 12px. Now, if the width = 2em. This means, the width is 2 x 12 = 24px
 
-
 ex -> we rarely use. we dont see them in action. These are calculated based on the the x-height of the element
 
-
 ch -> we rarely use. we dont see them in action. These are with respective to "0" width
-
 
 rem -> we rarely use. BUT we DO see them in action sometimes. These are calculated based on the font-size of the root element.
 example:
 if <html> has a style of font-size: 14px and a div has 2rem width then the width is 14 * 2 = 28px.
 
-
 vw -> this is viewport width. And its calculated as 1% of the viewport width.
 example:
 lets say we have div with width of 20vm. This means 20% of the width of the screen.
-
 
 vh -> this is viewport height. And its calculated as 1% of the viewport height.
 example:
