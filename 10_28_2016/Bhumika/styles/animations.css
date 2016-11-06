@@ -1,10 +1,25 @@
+#main-header{
+
+    -webkit-transition: width 2s; /* Safari */
+    -moz-transition: width 2s;; /* Firefox */
+    -o-transition: width 2s; /* Opera */
+    -ms-transition: width 2s;; /* IE 9 */
+    transition: width 3s;
+}
+
+#main-header:hover {
+
+    width: 300px;
+    color: #749cfe;
+}
+
 .twoDanimation {
 
-    -webkit-transform: skew(10deg, 5deg); /* Safari */
-    -moz-transform: skew(10deg, 5deg); /* Firefox */
-    -o-transform: skew(10deg, 5deg); /* Opera */
-    -ms-transform: skew(10deg, 5deg); /* IE 9 */
-    transform: skew(10deg, 5deg);
+    -webkit-transform: skew(5deg, 5deg); /* Safari */
+    -moz-transform: skew(5deg, 5deg); /* Firefox */
+    -o-transform: skew(5deg, 5deg); /* Opera */
+    -ms-transform: skew(5deg, 5deg); /* IE 9 */
+    transform: skew(5deg, 5deg);
 }
 
 .threeDanimation {
