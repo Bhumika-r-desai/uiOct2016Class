@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--head of the web page-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="This is an online shopping website"/>
+        <meta name="keywords" content="Clothing, Fashion, Style, Accessories, Women, wholesale, custom made" />
+        <title>Kiwi Clothing</title>
+        <link href="../styles/styles1.css" rel="stylesheet"/>
+        <!--<link href="../styles/animations1.css" rel="stylesheet"/>-->
+        <!-- Latest compiled and minified CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap/css/boostrap-theme-min.css">
+    </head>
+
+    <!--body of the web page-->
+    <body>
+        <!--main article for forms-->
+        <article>
+
+            <!--page header-->
+            <header id="main-header">
+                <h1>Kiwi Clothing</h1>
+            </header>
+
+            <!--main body of the page-->
+            <section id="main-section">
+                <article>
+                    <header id="nav-header">
+                        <!--page navigation-->
+                        <nav>
+                            <ul id= "links">
+                                <li>
+                                    <a href="">Catalogue</a>
+                                </li>
+                                <li>
+                                    <a href="">Guide </a>
+                                </li>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Register</a>
+                                </li>
+                                <li>
+                                    <a href="">Log in</a>
+                                </li>
+
+                            </ul>
+
+                            <ul id= "sprites">
+                                <!-- css sprites buttons-->
+                                <li id="facebook">
+                                    <a href="https://www.facebook.com/"></a>
+                                </li>
+                                <li id="twitter">
+                                    <a href="https://twitter.com/"></a>
+                                </li>
+                                <li id="youtube">
+                                    <a href="https://www.youtube.com/"></a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </header>
+                    <section>
+                        <!--form for new users-->
+                        <form>
+                            <!--Name-->
+                            <div>
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required/>
+                            </div>
+                            <br />
+
+                            <!--Phone Number-->
+                            <div>
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Your phone number" required/>
+                            </div>
+                            <br />
+
+                            <!--Email-->
+                            <div>
+                                <label for="email">Email Id</label>
+                                <input type="email" id="email" name="email" placeholder="Your email id" required/>
+
+                                <!--for validation-->
+                                <label for="email" id="invalidEmail">Invalid Email added</label>
+                            </div>
+                            <br />
+
+                            <!--Username-->
+                            <div>
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" placeholder="Your preferred username" required/>
+                            </div>
+                            <br />
+
+                            <!--Password-->
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Your password" required/>
+                            </div>
+                            <br />
+
+                            <!--Subscribe button-->
+                            <div>
+                                <label for="subscribe">Do you want to subscribe for our regular style updates?</label>
+                                <fieldset id="subscribe">
+                                    <!--yes-->
+                                    <label for="yes">Yes</label>
+                                    <input type="radio" id="yes" name="yes" value="yes"/>
+
+                                    <!--no-->
+                                    <label for="no">No</label>
+                                    <input type="radio" id="no" name="yes" value="yes"/>
+                                </fieldset>
+                            </div>
+                            <br />
+
+                            <!--optional payment method-->
+                            <div>
+                                <label for="paymentMethod">Do you want to add a payment method now?</label>
+                                <input type="checkbox" id="paymentMethod" name="paymentMethod"/>
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+
+                            <!--reset/cancel-->
+                            <button type="reset" id="reset">
+                                <span>Cancel</span>
+                            </button>
+
+                        </form>
+
+                        <div class="twoDanimation">
+                            <h2>Your one stop solution for every occasion...</h2>
+                        </div>
+
+                        <div class="threeDanimation">
+                            <h2>Talk to our designers and get the latest styles...</h2>
+                        </div>
+
+                        <div class="keyframeAnimation">
+                            <h2> Stay stylish, stay beautiful...</h2>
+                        </div>
+
+                    </section>
+                </article>
+            </section>
+            <!--footer of the page-->
+            <footer id="main-footer">
+                <nav>
+                    <ul id="footer">
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="">Policies</a>
+                        </li>
+                        <li>
+                            <a href="">Live Chat</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </article>
+    </body>
+</html>

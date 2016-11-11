@@ -1,0 +1,262 @@
+body {
+
+    font-family: Calibri;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 170%;
+}
+
+#main-header, #nav-header {
+
+    position: fixed;
+    z-index: 999;
+}
+
+#main-header {
+
+    top: 1px;
+    display: inline-block;
+    width: 99%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: "Cooper Black";
+    font-style: oblique;
+}
+
+#nav-header {
+
+    top: 63px;
+    width: 99%;
+}
+
+#links, #footer{
+
+    list-style-type: none;
+    background-color: #000;
+    margin: 0;
+    padding: 1%;
+    position: absolute;
+    width: 98%;
+}
+
+#links {
+
+    top: 37%;
+}
+
+#footer {
+
+    bottom: 2%;
+}
+
+#links > li, #footer > li{
+
+    display: inline-block;
+    width: 6%;
+    margin-right: 0;
+    padding: 5px;
+    text-align: center;
+    text-transform: none;
+    background-color: #f34b99;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+a:link {
+
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+
+    text-decoration: none;
+    color: #ecf1f7;
+}
+
+a:hover {
+
+    color: #000;
+}
+
+a:active {
+
+    background: #ccc;
+    opacity: 0.5;
+}
+
+#sprites > li{
+    list-style-type: none;
+    display: inline-block;
+    width: 1%;
+    margin-right: 0;
+    padding: 5px;
+}
+
+
+#facebook > a, #twitter > a, #youtube > a{
+
+    display: inline-block;
+    background: url(../images/icon-sprites1.jpg);
+    width: 13px;
+    height: 13px;
+    background-size: 484%;
+    position: absolute;
+    top: 60%;
+    right: 100px;
+    margin-right: 0;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+
+#facebook > a {
+
+    background-position: -2px -3px;
+    left: 88%;
+}
+/*
+#facebook > a:hover {
+
+    background: 0 -45px;
+}*/
+
+#twitter > a {
+
+    background-position: 134px -2px;
+    left: 92%;
+}
+/*
+#twitter > a:hover {
+
+    background: 0 -45px;
+}*/
+
+#youtube > a {
+
+    background-position: -597px -99px;
+    left: 96%;
+}
+/*
+#youtube > a:hover {
+
+    background: 0 -45px;
+}*/
+
+
+form {
+
+    display: inline-block;
+    background-color: #e4f3f3;
+    border: 2px solid #000000;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    padding: 10px;
+    position: absolute;
+    right: 2%
+}
+
+label {
+
+    display: block;
+    padding: 5px;
+    margin: auto;
+}
+
+input {
+
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="email"]:valid ~ #invalidEmail {
+
+    display: none;
+}
+
+input[type="email"]:invalid ~ #invalidEmail {
+
+    display: inline-block;
+}
+
+#invalidEmail {
+
+    position: absolute;
+    top: 215px;
+    left: 30px;
+    color: #ff0000;
+}
+
+fieldset{
+    display: inline-block;
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    display: inline-block;
+    width: 46%;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f34b99;
+}
+
+button:hover {
+
+    background-color: #749cfe;
+    border: 2px solid #8f9ea4;
+    color: #000;
+}
+
+.twoDanimation, .threeDanimation, .keyframeAnimation {
+
+    height: 100px;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    left: 8%;
+}
+
+.twoDanimation {
+    top: 20%;
+}
+
+.threeDanimation {
+    top: 50%;
+}
+
+.keyframeAnimation {
+    top: 80%;
+}
+
+.content {
+
+    position: absolute;
+    bottom: -60%;
+    font-style: italic;
+}
+
+#main-footer{
+
+    position: absolute;
+    bottom: -75%;
+    display: inline-block;
+    width: 99%;
+    text-align: center;
+}

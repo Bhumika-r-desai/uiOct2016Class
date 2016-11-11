@@ -21,4 +21,4 @@ max-width, max-height, min-width, min-height, orientation, width and height
 lets say we have an inline style (attribute level style). and we want to overright that style in our .css file. to do this, we use !important which says that this assigned style is very important
 
 
-to overright an inline style, we use !important
+to override an inline style, we use !important
