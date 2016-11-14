@@ -20,7 +20,8 @@ example:
 ** we cannot call '&' inside '&'. but, we can add multiple '&' in one single style block
 _____________________________________________________________________
 
-4. extend: this is used to extend one style into the other style. We can add multiple style blocks inside the extend function callback. This used function callbacks like "(" and ")".
+4. extend: this is used to extend one style into the other style. We can add multiple style blocks inside the extend function callback.
+This usees function callbacks like "(" and ")".
 example:
 
 .header{
@@ -40,10 +41,11 @@ example:
 }
 _____________________________________________________________________
 
-5. mixins: this is another type of extend with some key differences, namely: we can right different states using the "&" (in short we can nest "&") and secondly, the class that we need to extend is a "function".
+5. mixins: this is another type of extend with some key differences, namely: we can right different states using the "&" (in short we can nest "&")
+ and secondly, the class that we need to extend is a "function".
 These functions can take input. 
 
-IN SHORT, MIXINS ARE REUSABLE FUNCTION COMPONENT WHICH TAKES ARGUEMENTS
+IN SHORT, MIXINS ARE REUSABLE FUNCTION COMPONENT WHICH TAKES ARGUMENTS
 
 example:
 

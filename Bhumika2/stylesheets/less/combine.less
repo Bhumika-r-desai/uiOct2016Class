@@ -1,0 +1,215 @@
+@import "responsive";
+@import "variables";
+@import "media";
+
+/*styles*/
+body {
+  margin: 0 0 0 0;
+  width: 0;
+  height: 0;
+  font-family: Calibri;
+  background-color: @orange;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/*.rows {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}*/
+.nav1{
+  .nav-basic;
+  background-color: #485164;
+}
+
+.nav2 {
+  .nav-basic;
+  background-color: #fff;
+  top: 9%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  a {
+    text-decoration: none;
+  }
+}
+
+.links1 > li, .links2 > li {
+    display: inline-block;
+    float: right;
+    //text-decoration: none;
+    margin-right: 5px;
+    text-align: center;
+
+    &:hover {
+      border-bottom: 2px solid #fd7a2a;
+    }
+}
+
+.links1 > li {
+    width: 10%;
+}
+
+.links2{
+    li {
+    width: 8%;
+    }
+}
+
+figure {
+    display: inline-block;
+    width: 10%;
+    float: left;
+}
+
+.href-white{
+    color: @light-gray;
+}
+
+.center{
+    transform: translate(-50%, 0)
+}
+
+.nav-footer {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    background-color: @dark-gray;
+    width: 100%;
+    z-index: 999;
+}
+
+.links-footer > li {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+
+      & a:hover {
+        color: @white;
+      }
+
+}
+
+
+/*.footer-image {
+    float: right;
+}*/
+
+.form {
+
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 30%;
+    background-color: @white;
+    opacity: 1;
+    text-align: center;
+
+
+    h3 {
+      color: @orange;
+      display: inline-block;
+    }
+    h1 {
+      font-weight: 300;
+      display: inline-block;
+    }
+
+    input {
+      width: 90%;
+      border-top: 1px solid @light-gray;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      padding: 18px;
+
+      &:hover {
+        border: 2px solid @orange;
+      }
+    }
+}
+
+.button {
+    display: inline-block;
+    width: 90%;
+    background-color: @orange;
+    color: @white;
+
+    &:hover {
+      background-color: @light-orange;
+      cursor: pointer;
+    }
+}
+
+.loginForm {
+
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    width: 40%;
+    background-color: @white;
+    text-align: center;
+
+    figure > a > .form-image {
+      display: inline-block;
+      width: 90%;
+      height: 70px;
+    }
+    input {
+      display: inline-block;
+      width: 90%;
+      margin: 10px;
+      padding: 5px;
+      background-color: @light-gray;
+    }
+    .button {
+      background-color: @blue;
+      color: @white;
+    }
+
+    label {
+      display: inline-block;
+      position: absolute;
+      bottom: 3%;
+      left: 55%;
+      color: @blue;
+
+      &:hover {
+        border-bottom: 1px solid @blue;
+      }
+
+    }
+}
+
+/*.breadcrumb {
+
+  list-style: none;
+  overflow: hidden;
+  font: 18px Helvetica, Arial, Sans-Serif;
+
+  .breadcrumb li {
+    float: left;
+  }
+
+  .breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0 10px 65px;
+    background: @orange;
+    //background: @light-orange;
+    position: relative;
+    display: block;
+    float: left;
+  }
+}*/

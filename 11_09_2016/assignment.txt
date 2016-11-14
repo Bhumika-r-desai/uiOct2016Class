@@ -7,8 +7,9 @@
 2. develop a login form from scratch. This is in HTML and make sure that "trinity" structure and indentations are maintained
     YOU ARE NOT ALLOWED TO USE BOOTSTRAP!!!!
 
-3. develop another html with you details like your name, email, phone, hobbies. style it in a good way. you need to follow bootstrap's convention of container, row and columns WITHOUT USING BOOTSTRAP. meaning create container class, row class and all 12 columns in LESS CSS and you can reference bootstrap.
-    name container as contains, name row as rows and all columns will have this convention column-1, column-2, etc.
+3. develop another html with you details like your name, email, phone, hobbies. style it in a good way. you need to follow bootstrap's convention of
+    container, row and columns WITHOUT USING BOOTSTRAP. meaning create container class, row class and all 12 columns in LESS CSS and you can reference
+    bootstrap. Name container as contains, name row as rows and all columns will have this convention column-1, column-2, etc.
 
 4. the details page should have the same logo you used in the login page as the header logo and also maintain a breadcrumb.
 

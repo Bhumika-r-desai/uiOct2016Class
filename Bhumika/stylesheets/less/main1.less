@@ -1,0 +1,170 @@
+@import "variables1.less";
+
+body {
+  background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+}
+
+.main-header, .nav-header {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+  width: 99%;
+
+}
+
+.nav-header {
+  float: right;
+}
+
+.main-header {
+
+  top: 0;
+  font-family: "Arial Rounded MT Bold";
+  font-size: xx-large;
+  text-align: center;
+  background-color: @dark-gray;
+}
+
+.links {
+  list-style: none;
+  background-color: @dark-gray;
+  margin: 0;
+  padding: 1%;
+  width: 98%;
+  font-size: large !important;
+}
+
+.links > li, .footer > li {
+
+  display: inline-block;
+  width: 6%;
+  margin-right: 0;
+  padding: 5px;
+  text-align: center;
+  text-transform: none;
+  background-color: @black;
+  color: @white;
+
+  .border;
+  &:hover {
+    background-color: @dark-gray;
+    color: @black;
+  }
+  a:link, a:visited {
+    text-decoration: none;
+  }
+  a:visited {
+    color: @light-gray;
+  }
+  a:active {
+    background: @light-gray;
+    opacity: 0.5;
+  }
+}
+
+.categories {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  position: absolute;
+  top: 28%;
+  .border;
+}
+
+.images {
+  position: absolute;
+  top: 35%;
+  margin: 10px;
+  padding: 10px;
+  opacity: 0.5;
+  width: 20%;
+  .border;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+span {
+  position: absolute;
+  top: 55%;
+  margin-left: 110px;
+  font-family: "Arial Rounded MT Bold";
+  font-size: large;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.rows {
+  display: inline-block;
+  width: 30%;
+}
+
+.contact {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  margin: 30px;
+  padding: 30px;
+  background-color: @light-blue;
+  border: 1px solid @dark-gray;
+  border-radius: 2px;
+  text-align: center;
+  .border;
+  &:hover {
+    border: 2px solid @magenta;
+    cursor: pointer;
+  }
+}
+
+form {
+
+  display: inline-block;
+  background-color: @light-blue;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  padding: 10px;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  .border;
+}
+
+label {
+
+  display: block;
+  padding: 5px;
+  margin: auto;
+}
+
+input {
+
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button > span{
+  .button;
+  &:hover {
+      background-color: @blue;
+      border: 2px solid @black;
+      color: @black;
+  }
+}
+
+#main-footer{
+
+  background-color: @dark-gray;
+  position: absolute;
+  bottom: -75%;
+  display: inline-block;
+  width: 99%;
+  text-align: center;
+}
