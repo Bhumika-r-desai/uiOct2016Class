@@ -15,74 +15,92 @@
         <!-- Optional theme -->
         <!--<link rel="stylesheet" href="bootstrap/css/boostrap-theme-min.css"> -->
     </head>
-    <body style="background-color: #39404D">
+
+    <body>
         <article class="contains">
-            <section class="rows">
+            <section>
                 <header>
-                    <div class="header column-xs-12 column-sm-6 column-md-4 column-lg-3">
-                        <nav class="nav1">
-                            <div class="column-xs-12 column-sm-6 column-md-4 column-lg-3 ">
-                                <figure class="logo-citrix column-6">
+
+                    <div class="header">
+
+                        <nav class="nav1 rows">
+                            <!--<div class="column-lg-4 column-xs-12 column-sm-12 column-md-4">-->
+                            <div class="column-lg-10">
+                                <figure class="logo-citrix image">
                                     <img src="../images/logo_header.png">
                                 </figure>
                             </div>
-                            <ul class="links1">
-                                <li class="column-xs-12 column-sm-6 column-md-4 column-lg-3">
-                                    <a href="" class="href-white">Support</a>
-                                </li>
-                                <li class="column-xs-12 column-sm-6 column-md-4 column-lg-3">
-                                    <a href="login.html" class="href-white">Sign In</a>
-                                </li>
-                            </ul>
+                            <div class="column-lg-2">
+                                <ul class="links1 links">
+                                    <!--<div class="column-lg-2"></div>-->
+                                    <!--<li class="column-lg-4 column-xs-12 column-sm-12 column-md-4">-->
+                                    <!--<li class="pull-right column-lg-4">-->
+                                    <li class="column-lg-4">
+                                        <a href="">Support</a>
+                                    </li>
+                                    <!--<li class="pull-right column-lg-4 column-xs-12 column-sm-12 column-md-4">-->
+                                    <!--<li class="pull-right column-lg-4">-->
+                                    <li class="column-lg-8">
+                                        <a href="login.html">Sign In</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                 </header>
-                <div>
-                    <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                    </ul>
-                </div>
             </section>
 
-            <section class="contains">
-                <div class="column-xs-12 column-sm-6 column-md-4 column-lg-3">
-                <form class="loginForm">
-                    <div>
-                        <!-- form logo-->
-                        <figure class="form-image">
-                            <!--<a href="index.html"></a>-->
-                            <img src="../images/logo1.PNG">
-                        </figure>
-                    </div>
+            <section>
+                <!-- bread crumb-->
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </section>
 
-                    <div>
-                        <!-- Username/ Email -->
-                        <input id="email" name="email" type="email" placeholder="Email Address" required>
+            <section>
+                <div class="rows">
 
-                        <!-- Password -->
-                        <input id="password" name="password" type="password" placeholder="Password" required>
-                    </div>
-                    <div>
-                    <!--buttons-->
-                    <button type="submit" id="submit" class="button">
-                        <span>Submit</span>
-                    </button>
-                    </div>
-                    <!--<button class="button">
-                        <input type="reset" value="Cancel">
-                    </button> -->
+                    <form class="loginForm column-xs-12 column-sm-12 column-md-4 column-lg-4">
+                        <div class="rows">
+                            <!-- form logo-->
+                            <figure class="form-image">
+                                <!--<a href="index.html"></a>-->
+                                <img src="../images/logo1.PNG" class="column-lg-6 column-md-6 column-sm-10">
+                            </figure>
+                        </div>
 
-                    <div>
-                        <label for="remember">Remember Me</label>
-                        <input type="checkbox" id="remember" name="remember" class="checkbox"/>
-                    </div>
-                </form>
+                        <div>
+                            <!-- Username/ Email -->
+                            <input id="email" name="email" type="email" placeholder="Email Address" required class="input">
+                        </div>
+
+                        <div>
+                            <!-- Password -->
+                            <input id="password" name="password" type="password" placeholder="Password" required class="input">
+                        </div>
+
+                            <button type="submit" id="submit" class="button btn-login">
+                                <span>SUBMIT</span>
+                            </button>
+
+                            <!--<button class="button">
+                                <input type="reset" value="Cancel">
+                            </button> -->
+
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember" name="remember"/>
+                            <label for="remember">Remember Me</label>
+                        </div>
+
+                    </form>
                 </div>
 
             </section>
+
             <footer>
             </footer>
+
         </article>
     </body>
 </html>

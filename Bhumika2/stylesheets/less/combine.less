@@ -3,34 +3,32 @@
 @import "media";
 
 /*styles*/
+html, body {
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
-  margin: 0 0 0 0;
+
+  margin: -3px;;
   width: 0;
   height: 0;
   font-family: Calibri;
   background-color: @orange;
 }
 
-html, body {
-  overflow-x: hidden;
-}
+.nav1 {
 
-/*.rows {
-  &::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
-}*/
-.nav1{
   .nav-basic;
+  top: 0;
   background-color: #485164;
 }
 
 .nav2 {
   .nav-basic;
-  background-color: #fff;
   top: 9%;
+  background-color: #fff;
 }
 
 ul {
@@ -40,69 +38,91 @@ ul {
 li {
   a {
     text-decoration: none;
+    padding: 1%;
+    cursor: pointer;
   }
 }
 
-.links1 > li, .links2 > li {
-    display: inline-block;
-    float: right;
-    //text-decoration: none;
-    margin-right: 5px;
-    text-align: center;
+.links  {
 
-    &:hover {
-      border-bottom: 2px solid #fd7a2a;
-    }
-}
-
-.links1 > li {
-    width: 10%;
-}
-
-.links2{
-    li {
-    width: 8%;
-    }
-}
-
-figure {
-    display: inline-block;
-    width: 10%;
-    float: left;
-}
-
-.href-white{
-    color: @light-gray;
-}
-
-.center{
-    transform: translate(-50%, 0)
-}
-
-.nav-footer {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    background-color: @dark-gray;
-    width: 100%;
-    z-index: 999;
-}
-
-.links-footer > li {
-    display: inline-block;
-    width: 5%;
-    text-align: center;
+    > li {
+      display: inline-block;
+      //margin-right: 1%;
+      text-align: center;
+      padding: 0;
 
       & a:hover {
+        border-bottom: 2px solid #fd7a2a;
+      }
+    }
+}
+
+.pull-right{
+  float: right;
+}
+
+.links1 {
+
+    > li {
+      //width: 5%;
+
+      a {
         color: @white;
       }
 
+      & a:active {
+        border-bottom: 2px solid #fd7a2a;
+      }
+    }
 }
 
+.links2 {
 
-/*.footer-image {
-    float: right;
-}*/
+    > li {
+      width: 15%;
+      margin-right: 1px;
+      padding: 1%;
+      text-transform: uppercase;
+    }
+}
+
+.meeting {
+
+  background-color: @light-gray;
+  color: @orange;
+
+}
+
+.image {
+
+  width: 10%;
+  float: left;
+}
+
+.nav-footer {
+
+    .header;
+    display: inline-block;
+    position: absolute;
+    bottom: -15%;
+    background-color: @dark-gray;
+    z-index: 999;
+}
+
+.links-footer {
+
+  > li {
+
+    display: inline-block;
+    width: 6%;
+    text-align: center;
+    .href-white;
+
+    &:hover {
+      color: @light-gray;
+    }
+  }
+}
 
 .form {
 
@@ -111,10 +131,12 @@ figure {
     top: 25%;
     right: 5%;
     width: 30%;
+    height: 70%;
     background-color: @white;
-    opacity: 1;
+    opacity: 0.9;
     text-align: center;
-
+    margin-bottom: 5%;
+    padding: 0;
 
     h3 {
       color: @orange;
@@ -125,13 +147,13 @@ figure {
       display: inline-block;
     }
 
+    //.input-field;
     input {
-      width: 90%;
-      border-top: 1px solid @light-gray;
-      border-left: none;
-      border-right: none;
-      border-bottom: none;
-      padding: 18px;
+      width: 100%;
+      border: 1px solid @light-gray;
+      margin-bottom: 1px;
+      padding: 4%;
+      background-color: @light-gray;
 
       &:hover {
         border: 2px solid @orange;
@@ -144,6 +166,8 @@ figure {
     width: 90%;
     background-color: @orange;
     color: @white;
+    margin: 4%;
+    padding: 2%;
 
     &:hover {
       background-color: @light-orange;
@@ -156,29 +180,56 @@ figure {
     display: inline-block;
     position: absolute;
     top: 25%;
-    right: 35%;
+    right: 30%;
     width: 40%;
     background-color: @white;
     text-align: center;
 
-    figure > a > .form-image {
+    .form-image {
       display: inline-block;
-      width: 90%;
-      height: 70px;
+      //width: 80%;
     }
+
+    //.input-field;
     input {
-      display: inline-block;
-      width: 90%;
-      margin: 10px;
-      padding: 5px;
+      width: 100%;
+      border: 1px solid @light-gray;
+      margin-bottom: 0;
+      padding: 4%;
       background-color: @light-gray;
+
+      &:hover {
+        border: 2px solid @orange;
+      }
     }
-    .button {
+    .btn-login {
+      .button;
       background-color: @blue;
       color: @white;
     }
 
-    label {
+  ul.breadcrumb {
+    padding: 8px 16px;
+    //list-style: none;
+    background-color: @dark-blue;
+  }
+  ul.breadcrumb li {
+
+    display: inline-block;
+    width: 10%;
+    float: left;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: @dark-gray;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+
+    color: @light-gray;
+  }
+
+    /*> label {
       display: inline-block;
       position: absolute;
       bottom: 3%;
@@ -187,29 +238,6 @@ figure {
 
       &:hover {
         border-bottom: 1px solid @blue;
-      }
+      }*/
 
-    }
 }
-
-/*.breadcrumb {
-
-  list-style: none;
-  overflow: hidden;
-  font: 18px Helvetica, Arial, Sans-Serif;
-
-  .breadcrumb li {
-    float: left;
-  }
-
-  .breadcrumb li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 0 10px 65px;
-    background: @orange;
-    //background: @light-orange;
-    position: relative;
-    display: block;
-    float: left;
-  }
-}*/
