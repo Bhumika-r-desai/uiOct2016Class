@@ -1,3 +1,4 @@
+@import "combine";
 // colors
 
 @darkest-gray: #333;
@@ -18,13 +19,28 @@
 .nav-basic{
   position: fixed;
   .header;
+  z-index: 999;
 }
 
-.contains {
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-right: auto;
-  margin-left: auto;
+.href-white {
+
+  color: @light-gray;
 }
+
+.center {
+
+  transform: translate(-50%, 0)
+}
+
+/*.input {
+  width: 100%;
+  border: 1px solid @light-gray;
+  margin-bottom: 0;
+  padding: 4%;
+
+  &:hover {
+    border: 2px solid @orange;
+  }
+}*/
 
 

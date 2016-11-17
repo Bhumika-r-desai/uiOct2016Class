@@ -11,7 +11,6 @@
         <title>GoTo Meeting</title>
         <!--<link href="../stylesheets/styles/styles.css" rel="stylesheet"/>-->
         <link href="../stylesheets/styles/combine.css" rel="stylesheet"/>
-       <!-- <link href="cs.css" rel="stylesheet"/>-->
         <!-- Latest compiled and minified CSS -->
         <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
         <!-- Optional theme -->
@@ -20,36 +19,36 @@
     <body>
         <article class="contains">
             <section>
-                <header>
+                <header class="header">
 
-                    <div class="header ">
+                   <!-- <div class="header">-->
 
                         <nav class="nav1 rows">
-                                <div class="column-lg-4 column-xs-12 column-sm-12 column-md-4">
-                                    <figure class="logo-citrix column-lg-3">
-                                        <img src="../images/logo_header.png">
-                                    </figure>
-                                </div>
-                                <ul class="links1">
-                                    <li class="column-lg-4 column-xs-12 column-sm-12 column-md-4">
-                                        <a href="" class="href-white">Support</a>
-                                    </li>
-                                    <li class="column-lg-4 column-xs-12 column-sm-12 column-md-4">
-                                        <a href="login.html" class="href-white">Sign In</a>
-                                    </li>
-                                </ul>
+                            <!--<div class="column-xs-12 column-sm-12 column-md-4 column-lg-4"> -->
+                            <figure class="logo-citrix image column-xs-4 column-sm-4 column-md-4 column-lg-4" >
+                                <img src="../images/logo_header.png">
+                            </figure>
+                            <!--</div>-->
+                            <ul class="links1 links">
+                                <li class="column-xs-4 column-sm-4 column-md-4 column-lg-4">
+                                    <a href="">Support</a>
+                                </li>
+                                <li class="column-xs-4 column-sm-4 column-md-4 column-lg-4">
+                                    <a href="login.html">Sign In</a>
+                                </li>
+                            </ul>
                         </nav>
-                    </div>
+                   <!-- </div> -->
 
-                    <div >
-                        <nav class="nav2 rows">
-                            <div class="column-lg-3 column-xs-12 column-sm-12 column-md-4">
-                                <figure class="center logo-goto">
+                    <div class="rows">
+                        <nav class="nav2">
+                            <div class="column-xs-2 column-sm-2 column-md-4 column-lg-3 ">
+                                <figure class="center logo-goto image">
                                     <img src="../images/logo_index.png">
                                 </figure>
                             </div>
-                            <div class="column-lg-9 column-xs-12 column-sm-12 column-md-8">
-                                <ul class="links2">
+                            <div class="column-xs-10 column-sm-10 column-md-8 column-lg-9">
+                                <ul class="links2 links">
                                     <li>
                                         <a href="">Features</a>
                                     </li>
@@ -73,66 +72,75 @@
 
             </section>
 
-            <section class="contains">
+            <section>
                     <div class="rows">
-                        <form class="form">
-                            <div>
-                                <h3>ONLINE MEETINGS MADE EASY</h3>
-                                <h1>Millions of Businesses rely on GoToMeeting.</h1>
-                                <h5>GoToMeeting lets your best work shine through.</h5>
-                            </div>
+                        <div class="column-xs-12 column-sm-12 column-md-6 column-lg-4">
 
-                            <div>
-                                <input type="text" name="firstName" placeholder="First Name">
-                            </div>
+                            <form class="form">
+                                <div>
+                                    <h4>ONLINE MEETINGS MADE EASY</h4>
+                                    <h1>Millions of Businesses rely on GoToMeeting.</h1>
+                                    <h5>GoToMeeting lets your best work shine through.</h5>
+                                </div>
 
-                            <div>
-                                <input type="text" name="lastName" placeholder="Last Name">
-                            </div>
+                                <div>
+                                    <input type="text" name="firstName" placeholder="First Name" class="input">
+                                </div>
 
-                            <div>
-                                <input type="email" name="email" placeholder="Email Address"
-                                       data-error-message="Please enter a valid email address">
-                            </div>
+                                <div>
+                                    <input type="text" name="lastName" placeholder="Last Name" class="input">
+                                </div>
 
-                            <div>
-                                <input type="password" placeholder="Password: 8-32 letters and numbers"
-                                       data-error-message="Password must contain letters and numbers">
-                            </div>
+                                <div>
+                                    <input type="email" name="email" placeholder="Email Address"
+                                           data-error-message="Please enter a valid email address" class="input">
+                                </div>
 
-                            <button type="submit" id="submit" class="button">
-                                <span>Start my free 7-day trail</span>
-                            </button>
-                        </form>
+                                <div>
+                                    <input type="password" placeholder="Password: 8-32 letters and numbers"
+                                           data-error-message="Password must contain letters and numbers" class="input">
+                                </div>
+
+                                <button type="submit" id="submit" class="button">
+                                    <span>Start my free 7-day trail</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="column-md-6 column-lg-8">
+                        </div>
                     </div>
             </section>
-            <section class="contains">
-                <footer class="rows">
-                    <div class="column-xs-12 column-sm-6 column-md-6 column-lg-6">
-                        <nav class="nav-footer">
-                            <ul class="links-footer">
-                                <li>
-                                    <a href="#">United States</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms of Service</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Anti-Spam Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Download GoToMeeting</a>
-                                </li>
-                            </ul>
-                            <!--<div class="column-lg-3 column-md-4 column-sm-12">
-                                <figure class="footer-image">
-                                    <img src="../images/logo_header.png">
-                                </figure>
-                            </div> -->
-                        </nav>
+
+            <section>
+                <footer>
+                    <div class="rows">
+                        <div class="column-xs-12 column-sm-12 column-md-12 column-lg-12">
+                            <nav class="nav-footer">
+                                <ul class="links-footer">
+                                    <li>
+                                        <a href="#">United States</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Anti-Spam Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Download GoToMeeting</a>
+                                    </li>
+                                </ul>
+                                <!--<div class="column-lg-3 column-md-4 column-sm-12">
+                                    <figure class="footer-image">
+                                        <img src="../images/logo_header.png">
+                                    </figure>
+                                </div> -->
+                            </nav>
+                        </div>
                     </div>
                 </footer>
             </section>
