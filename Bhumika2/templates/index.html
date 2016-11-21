@@ -14,55 +14,64 @@
         <!-- Latest compiled and minified CSS -->
         <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
         <!-- Optional theme -->
-        <!--<link rel="stylesheet" href="bootstrap/css/boostrap-theme-min.css"> -->
+        <!--<link rel="stylesheet" href="bootstrap/css/bootstrap-theme-min.css"> -->
     </head>
     <body>
         <article class="contains">
             <section>
-                <header class="header">
+                <header>
 
-                   <!-- <div class="header">-->
+                    <div class="rows">
 
-                        <nav class="nav1 rows">
-                            <!--<div class="column-xs-12 column-sm-12 column-md-4 column-lg-4"> -->
-                            <figure class="logo-citrix image column-xs-4 column-sm-4 column-md-4 column-lg-4" >
-                                <img src="../images/logo_header.png">
-                            </figure>
-                            <!--</div>-->
-                            <ul class="links1 links">
-                                <li class="column-xs-4 column-sm-4 column-md-4 column-lg-4">
-                                    <a href="">Support</a>
-                                </li>
-                                <li class="column-xs-4 column-sm-4 column-md-4 column-lg-4">
-                                    <a href="login.html">Sign In</a>
-                                </li>
-                            </ul>
+                        <nav class="nav1">
+                            <!--<div class="column-lg-4 column-xs-12 column-sm-12 column-md-4">-->
+                            <div class="column-xs-6 column-sm-8 column-md-8 column-lg-8">
+                                <div class="logo-citrix image">
+                                    <img src="../images/logo_header.png">
+                                </div>
+                            </div>
+                            <div class="column-xs-6 column-sm-4 column-md-4 column-lg-4">
+                                <ul class="links1 links">
+                                    <!--<li class="pull-right column-lg-4 column-xs-12 column-sm-12 column-md-4">-->
+                                    <li class="column-xs-6 column-sm-6 column-md-6 column-lg-6">
+                                        <a href="login.html">Sign In</a>
+                                    </li>
+                                    <!--<li class="column-lg-4 column-xs-12 column-sm-12 column-md-4">-->
+                                    <li class="column-xs-6 column-sm-6 column-md-6 column-lg-6">
+                                        <a href="">Support</a>
+                                    </li>
+
+                                </ul>
+                            </div>
                         </nav>
-                   <!-- </div> -->
+                    </div>
 
                     <div class="rows">
                         <nav class="nav2">
-                            <div class="column-xs-2 column-sm-2 column-md-4 column-lg-3 ">
-                                <figure class="center logo-goto image">
+                            <!--<div class="column-xs-2">-->
+                            <div class="hidden-xs column-sm-1 column-md-1 column-lg-1">
+                                <div class="logo-goto image ">
                                     <img src="../images/logo_index.png">
-                                </figure>
+                                </div>
                             </div>
-                            <div class="column-xs-10 column-sm-10 column-md-8 column-lg-9">
+                            <div class="column-xs-12 column-sm-11 column-md-11 column-lg-11">
                                 <ul class="links2 links">
-                                    <li>
-                                        <a href="">Features</a>
+                                    <li class="column-xs-4 column-sm-4 column-md-4 column-lg-4">
+                                        <a href="#">Menu ￬</a>
+                                        <ul class=" ">
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Plans & Pricing</a></li>
+                                            <li><a href="#">Resources</a></li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="">Plans & Pricing</a>
+
+                                    <li class="meeting column-xs-4 column-sm-4 column-md-4 column-lg-4">
+                                    <!--<li class="meeting column-sm-2 column-md-2 column-lg-2">-->
+                                        <a href="">Join Meeting</a>
                                     </li>
-                                    <li>
-                                        <a href="">Resources</a>
-                                    </li>
-                                    <li class="meeting">
-                                        <a href="">Join a Meeting</a>
-                                    </li>
-                                    <li class="meeting">
-                                        <a href="">Host a Meeting</a>
+                                    <li class="meeting column-xs-4 column-sm-4 column-md-4 column-lg-4">
+                                    <!--<li class="meeting column-sm-2 column-md-2 column-lg-2">-->
+                                        <a href="">Host Meeting</a>
                                     </li>
                                 </ul>
                             </div>
@@ -72,44 +81,41 @@
 
             </section>
 
-            <section>
-                    <div class="rows">
-                        <div class="column-xs-12 column-sm-12 column-md-6 column-lg-4">
+            <section class="rows">
 
-                            <form class="form">
-                                <div>
-                                    <h4>ONLINE MEETINGS MADE EASY</h4>
-                                    <h1>Millions of Businesses rely on GoToMeeting.</h1>
-                                    <h5>GoToMeeting lets your best work shine through.</h5>
-                                </div>
+                <div class="column-xs-12 column-sm-12 column-md-6 column-lg-4">
 
-                                <div>
-                                    <input type="text" name="firstName" placeholder="First Name" class="input">
-                                </div>
-
-                                <div>
-                                    <input type="text" name="lastName" placeholder="Last Name" class="input">
-                                </div>
-
-                                <div>
-                                    <input type="email" name="email" placeholder="Email Address"
-                                           data-error-message="Please enter a valid email address" class="input">
-                                </div>
-
-                                <div>
-                                    <input type="password" placeholder="Password: 8-32 letters and numbers"
-                                           data-error-message="Password must contain letters and numbers" class="input">
-                                </div>
-
-                                <button type="submit" id="submit" class="button">
-                                    <span>Start my free 7-day trail</span>
-                                </button>
-                            </form>
+                    <form class="form main-form">
+                        <div>
+                            <h4>ONLINE MEETINGS MADE EASY</h4>
+                            <h1>Millions of Businesses rely on GoToMeeting.</h1>
+                            <h5>GoToMeeting lets your best work shine through.</h5>
                         </div>
 
-                        <div class="column-md-6 column-lg-8">
+                        <div>
+                            <input type="text" name="firstName" placeholder="First Name" class="input">
                         </div>
-                    </div>
+
+                        <div>
+                            <input type="text" name="lastName" placeholder="Last Name" class="input">
+                        </div>
+
+                        <div>
+                            <input type="email" name="email" placeholder="Email Address" class="input">
+                        </div>
+
+                        <div>
+                            <input type="password" placeholder="Password: 8-32 letters and numbers" class="input">
+                        </div>
+
+                        <button type="submit" id="submit" class="button">
+                            <span>Start my free 7-day trail</span>
+                        </button>
+                    </form>
+                <div class="column-md-6 column-lg-8">
+                </div>
+
+                </div>
             </section>
 
             <section>
@@ -117,31 +123,54 @@
                     <div class="rows">
                         <div class="column-xs-12 column-sm-12 column-md-12 column-lg-12">
                             <nav class="nav-footer">
-                                <ul class="links-footer">
+                                <ul class="links-footer links">
                                     <li>
+                                    <!--<li class="column-xs-2 column-sm-2 column-md-2 column-lg-2">-->
                                         <a href="#">United States</a>
                                     </li>
                                     <li>
+                                    <!--<li class="column-xs-2 column-sm-2 column-md-2 column-lg-2">-->
                                         <a href="#">Terms of Service</a>
                                     </li>
                                     <li>
+                                    <!--<li class="column-xs-2 column-sm-2 column-md-2 column-lg-2">-->
                                         <a href="#">Privacy Policy</a>
                                     </li>
                                     <li>
+                                    <!--<li class="column-xs-2 column-sm-2 column-md-2 column-lg-2">-->
                                         <a href="#">Anti-Spam Policy</a>
                                     </li>
                                     <li>
+                                    <!--<li class="column-xs-2 column-sm-2 column-md-2 column-lg-2">-->
                                         <a href="#">Download GoToMeeting</a>
                                     </li>
                                 </ul>
-                                <!--<div class="column-lg-3 column-md-4 column-sm-12">
-                                    <figure class="footer-image">
-                                        <img src="../images/logo_header.png">
-                                    </figure>
-                                </div> -->
+
                             </nav>
                         </div>
                     </div>
+
+                    <!--<ul class="no-list-style center-text">
+
+                        <li class="column-xs-12 column-sm-10 column-md-8 column-lg-6 column-sm-offset-1 column-md-offset-2 column-lg-offset-3">
+                            <a href="http://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://www.twitter.com" target="_blank">
+                                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://plus.google.com" target="_blank">
+                                <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://www.youtube.com" target="_blank">
+                                <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <a href="http://www.comment.com" target="_blank">
+                                <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                    </ul>-->
                 </footer>
             </section>
         </article>

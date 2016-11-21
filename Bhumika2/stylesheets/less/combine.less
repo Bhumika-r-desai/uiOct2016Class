@@ -1,6 +1,7 @@
-@import "responsive";
-@import "variables";
-@import "media";
+@import "responsive.less";
+@import "variables.less";
+@import "media.less";
+@import "reusable.less";
 
 /*styles*/
 html, body {
@@ -18,147 +19,160 @@ body {
   background-color: @orange;
 }
 
+.loginBody {
+
+  background-color: @darkest-gray;
+}
+
+nav {
+
+  width: 100%;
+  z-index: 999;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      a {
+        text-decoration: none;
+        padding: 4%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .nav1 {
 
-  .nav-basic;
+  position: fixed;
   top: 0;
-  background-color: #485164;
+  background-color: @dark-gray;
+  padding: 2px;
 }
 
 .nav2 {
-  .nav-basic;
-  top: 9%;
+
+  position: fixed;
+  top: 7%;
   background-color: #fff;
-}
+  ul {
 
-ul {
-  list-style-type: none;
-}
+    li {
+      &:hover {
+        background-color: @light-gray;
+        color: @dark-gray;
+      }
+      ul {
+        display: none;
 
-li {
-  a {
-    text-decoration: none;
-    padding: 1%;
-    cursor: pointer;
+        li {
+          display: block;
+          float: none;
+
+          &:hover {
+            background-color: @dark-blue;
+            color: @light-gray;
+          }
+          a {
+            width: auto;
+            min-width: 100px;
+            padding: 0 20px;
+
+            &:hover {
+              display: block;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .links  {
 
-    > li {
+    li {
       display: inline-block;
       //margin-right: 1%;
       text-align: center;
       padding: 0;
 
-      & a:hover {
+      &:hover {
+        border-bottom: 2px solid #fd7a2a;
+      }
+
+      &:active {
         border-bottom: 2px solid #fd7a2a;
       }
     }
 }
 
-.pull-right{
-  float: right;
-}
 
 .links1 {
 
-    > li {
-      //width: 5%;
-
+    li {
       a {
         color: @white;
-      }
-
-      & a:active {
-        border-bottom: 2px solid #fd7a2a;
       }
     }
 }
 
 .links2 {
 
-    > li {
-      width: 15%;
-      margin-right: 1px;
-      padding: 1%;
+  float: right;
+  li {
+
+    width: 30%;
+    margin-right: 1%;
+    padding: 0%;
       text-transform: uppercase;
-    }
-}
+  }
+  .meeting {
 
-.meeting {
-
-  background-color: @light-gray;
-  color: @orange;
-
+    background-color: @light-gray;
+    color: @orange;
+  }
 }
 
 .image {
 
-  width: 10%;
+  //width: 10%;
   float: left;
+  padding: 5px;
 }
 
 .nav-footer {
 
-    .header;
     display: inline-block;
     position: absolute;
     bottom: -15%;
     background-color: @dark-gray;
-    z-index: 999;
 }
 
 .links-footer {
 
-  > li {
+  li {
+    width: 7%;
 
-    display: inline-block;
-    width: 6%;
-    text-align: center;
-    .href-white;
-
-    &:hover {
-      color: @light-gray;
+    a {
+      color: @white;
     }
   }
 }
 
-.form {
+.main-form {
 
+  .form;
+  right: 5%;
+
+  > h3 {
+    color: @orange;
     display: inline-block;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    width: 30%;
-    height: 70%;
-    background-color: @white;
-    opacity: 0.9;
-    text-align: center;
-    margin-bottom: 5%;
-    padding: 0;
+  }
+  > h1 {
+    font-weight: 300;
+    display: inline-block;
+  }
 
-    h3 {
-      color: @orange;
-      display: inline-block;
-    }
-    h1 {
-      font-weight: 300;
-      display: inline-block;
-    }
-
-    //.input-field;
-    input {
-      width: 100%;
-      border: 1px solid @light-gray;
-      margin-bottom: 1px;
-      padding: 4%;
-      background-color: @light-gray;
-
-      &:hover {
-        border: 2px solid @orange;
-      }
-    }
 }
 
 .button {
@@ -177,41 +191,28 @@ li {
 
 .loginForm {
 
+  .form;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin: 0 auto;
+  //left: 35%;
+  .form-image {
     display: inline-block;
-    position: absolute;
-    top: 25%;
-    right: 30%;
-    width: 40%;
-    background-color: @white;
-    text-align: center;
+  }
 
-    .form-image {
-      display: inline-block;
-      //width: 80%;
-    }
+  .btn-login {
+    .button;
+    background-color: @blue;
+    color: @white;
+  }
+}
 
-    //.input-field;
-    input {
-      width: 100%;
-      border: 1px solid @light-gray;
-      margin-bottom: 0;
-      padding: 4%;
-      background-color: @light-gray;
+/*
 
-      &:hover {
-        border: 2px solid @orange;
-      }
-    }
-    .btn-login {
-      .button;
-      background-color: @blue;
-      color: @white;
-    }
-
-  ul.breadcrumb {
-    padding: 8px 16px;
-    //list-style: none;
-    background-color: @dark-blue;
+ul.breadcrumb {
+  padding: 8px 16px;
+  //list-style: none;
+  background-color: @dark-blue;
   }
   ul.breadcrumb li {
 
@@ -222,22 +223,10 @@ li {
   ul.breadcrumb li+li:before {
     padding: 8px;
     color: @dark-gray;
-    content: "/\00a0";
   }
   ul.breadcrumb li a {
 
     color: @light-gray;
   }
+*/
 
-    /*> label {
-      display: inline-block;
-      position: absolute;
-      bottom: 3%;
-      left: 55%;
-      color: @blue;
-
-      &:hover {
-        border-bottom: 1px solid @blue;
-      }*/
-
-}
