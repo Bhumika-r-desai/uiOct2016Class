@@ -374,6 +374,17 @@
   }
 }
 */
+.links li {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+.links li:hover {
+  border-bottom: 2px solid #fd7a2a;
+}
+.links li:active {
+  border-bottom: 2px solid #fd7a2a;
+}
 .form {
   display: inline-block;
   position: absolute;
@@ -393,6 +404,12 @@
 }
 .form input:hover {
   border: 2px solid #fd7a2a;
+}
+.footer {
+  display: inline-block;
+  position: absolute;
+  bottom: -16%;
+  width: 100%;
 }
 /*styles*/
 html,
@@ -419,7 +436,7 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  padding: 4%;
+  padding: 10px;
   cursor: pointer;
 }
 .nav1 {
@@ -444,39 +461,43 @@ nav ul li a {
   display: block;
   float: none;
 }
-.nav2 ul li ul li:hover {
+.nav2 ul li ul li a:hover {
   background-color: #39404D;
   color: #edeef0;
-}
-.nav2 ul li ul li a {
+  display: block;
   width: auto;
   min-width: 100px;
   padding: 0 20px;
 }
-.nav2 ul li ul li a:hover {
-  display: block;
-}
-.links li {
+.links1 li {
   display: inline-block;
   text-align: center;
   padding: 0;
 }
-.links li:hover {
+.links1 li:hover {
   border-bottom: 2px solid #fd7a2a;
 }
-.links li:active {
+.links1 li:active {
   border-bottom: 2px solid #fd7a2a;
 }
 .links1 li a {
   color: #fff;
 }
-.links2 {
-  float: right;
+.links2 li {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+.links2 li:hover {
+  border-bottom: 2px solid #fd7a2a;
+}
+.links2 li:active {
+  border-bottom: 2px solid #fd7a2a;
 }
 .links2 li {
   width: 30%;
-  margin-right: 1%;
-  padding: 0%;
+  margin: 2px;
+  padding: 3px;
   text-transform: uppercase;
 }
 .links2 .meeting {
@@ -484,19 +505,32 @@ nav ul li a {
   color: #fd7a2a;
 }
 .image {
-  float: left;
   padding: 5px;
 }
-.nav-footer {
+footer {
   display: inline-block;
   position: absolute;
-  bottom: -15%;
+  bottom: -16%;
+  width: 100%;
   background-color: #485164;
 }
-.links-footer li {
-  width: 7%;
+footer li {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
 }
-.links-footer li a {
+footer li:hover {
+  border-bottom: 2px solid #fd7a2a;
+}
+footer li:active {
+  border-bottom: 2px solid #fd7a2a;
+}
+footer li i {
+  background-color: #fff;
+  color: #485164;
+  padding: 10px;
+}
+footer li a {
   color: #fff;
 }
 .main-form {
